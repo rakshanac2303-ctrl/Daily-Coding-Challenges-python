@@ -1,0 +1,15 @@
+what your name?
+
+def print_full_name(first, last):
+    # Write your code here
+    print(f"Hello {first} {last}! You just delved into python.")
+
+find the string 
+def count_substring(string, sub_string):
+    count=0
+    string_len=len(string)
+    sub_len=len(sub_string)
+    for i in range(string_len-sub_len+1):
+        if string[i:i+sub_len]==sub_string:
+            count+=1
+    return count
