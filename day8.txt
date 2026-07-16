@@ -1,0 +1,18 @@
+mutation:
+def mutate_string(string, position, character):
+    # Slice the string and insert the character
+    return string[:position] + character + string[position + 1:]
+
+if __name__ == '__main__':
+    s = input()
+    p, c = input().split()
+    result = mutate_string(s, int(p), c)
+    print(result)
+
+String Validators:
+  s = input()
+  print(any(char.isalnum() for char in s))
+  print(any(char.isalpha() for char in s))
+  print(any(char.isdigit() for char in s))
+  print(any(char.islower() for char in s))
+  print(any(char.isupper() for char in s))
