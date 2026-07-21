@@ -1,0 +1,19 @@
+if __name__ == '__main__':
+    m = int(input())
+    a = set(map(int, input().split()))
+    n = int(input())
+    b = set(map(int, input().split()))
+    sym_diff = a.symmetric_difference(b)
+    for val in sorted(sym_diff):
+        print(val)
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+    stamps = set()
+    
+    for _ in range(n):
+        stamps.add(input().strip())
+        
+    print(len(stamps))
