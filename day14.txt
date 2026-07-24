@@ -1,0 +1,16 @@
+n = int(input())
+english_set = set(map(int, input().split()))
+m = int(input())
+french_set = set(map(int, input().split()))
+result = english_set.symmetric_difference(french_set)
+print(len(result))
+
+
+n= int(input())
+A = set(map(int, input().split()))
+N = int(input())
+for n in range(N):
+    op_name, _ = input().split()
+    other_set = set(map(int, input().split()))
+    getattr(A, op_name)(other_set)
+print(sum(A))
